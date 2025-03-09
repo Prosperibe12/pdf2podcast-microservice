@@ -1,0 +1,6 @@
+auth_service/htmlcov
+auth_service/venv
+auth_service/.coverage
+auth_service/.coveragerc
+auth_service/.env
+auth_service/server.log
