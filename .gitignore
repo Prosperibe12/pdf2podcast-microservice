@@ -4,3 +4,4 @@ auth_service/.coverage
 auth_service/.coveragerc
 auth_service/.env
 auth_service/server.log
+gateway_service/venv

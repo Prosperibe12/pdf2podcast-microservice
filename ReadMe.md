@@ -2,8 +2,8 @@
 
 This project demonstrates a microservices architecture. It includes multiple services that communicate with each other to form a complete application. The services included in this project are:
 
-- **[Authentication Service](./auth_service/ReadMe.md)**: Manages user registration and authentication routes.
-- **[Gateway Service](./gateway_service/README.md)**: Manages the routing of requests to the appropriate services.
+- **[Authentication Service](https://github.com/Prosperibe12/microservice-auth)**: Manages user registration and authentication routes.
+- **[Gateway Service](https://github.com/Prosperibe12/gateway-service)**: Manages the routing of requests to the appropriate services.
 - **[RabbitMQ Service](./rabbitmq_service/README.md)**: Handles messaging between services.
 - **[DB Service](./db_service/README.md)**: Manages the database operations.
 - **[Notification Service](./notification_service/README.md)**: Sends notifications to users.
