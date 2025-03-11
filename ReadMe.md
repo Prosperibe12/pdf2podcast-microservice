@@ -4,10 +4,10 @@ This project demonstrates a microservices architecture. It includes multiple ser
 
 - **[Authentication Service](https://github.com/Prosperibe12/microservice-auth)**: Manages user registration and authentication routes.
 - **[Gateway Service](https://github.com/Prosperibe12/gateway-service)**: Manages the routing of requests to the appropriate services.
-- **[RabbitMQ Service](./rabbitmq_service/README.md)**: Handles messaging between services.
+- **[RabbitMQ Service](https://github.com/Prosperibe12/rabbitmq-service)**: Handles messaging between services.
+- **[MongoDB Service](./mongodb_service/README.md)**: Manages MongoDB database operations.
 - **[DB Service](./db_service/README.md)**: Manages the database operations.
 - **[Notification Service](./notification_service/README.md)**: Sends notifications to users.
-- **[MongoDB Service](./mongodb_service/README.md)**: Manages MongoDB database operations.
 - **[Video to MP3 Service](./video_to_mp3_service/README.md)**: Converts video files to MP3 format.
 - **[PDF to Podcast Service](./pdf_to_podcast_service/README.md)**: Converts PDF documents to podcast format.
 
