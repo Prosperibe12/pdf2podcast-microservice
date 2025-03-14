@@ -1,11 +1,11 @@
 # Microservices Architecture
 
-This project demonstrates a microservices architecture. It includes multiple services that communicate with each other to form a complete application. The services included in this project are:
+This project demonstrates a microservices architecture. It includes multiple services that communicate with each other to form a complete application within a kubernetes cluster. The services included in this project are:
 
 - **[Authentication Service](https://github.com/Prosperibe12/microservice-auth)**: Manages user registration and authentication routes.
 - **[Gateway Service](https://github.com/Prosperibe12/gateway-service)**: Manages the routing of requests to the appropriate services.
 - **[RabbitMQ Service](https://github.com/Prosperibe12/rabbitmq-service)**: Handles messaging between services.
-- **[MongoDB Service](./mongodb_service/README.md)**: Manages MongoDB database operations.
+- **[MongoDB Service](https://github.com/Prosperibe12/mongodb-service)**: Manages MongoDB database operations.
 - **[DB Service](./db_service/README.md)**: Manages the database operations.
 - **[Notification Service](./notification_service/README.md)**: Sends notifications to users.
 - **[Video to MP3 Service](./video_to_mp3_service/README.md)**: Converts video files to MP3 format.
