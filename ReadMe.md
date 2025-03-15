@@ -23,7 +23,13 @@ This system provides a seamless pipeline for media processing, enabling users to
 
 All services run within a **Kubernetes cluster**, leveraging containerized microservices to ensure **scalability, fault tolerance, and efficient resource management**.  
 
-## Technologies Used  
+## Architecture
+
+![Microservices Architecture](architecture.png)
+
+The above diagram illustrates the architecture of the microservices in this project.
+
+## Technologies 
 
 ### **Programming Languages & Frameworks**  
 - Python  
@@ -38,12 +44,6 @@ All services run within a **Kubernetes cluster**, leveraging containerized micro
 ### **Infrastructure & Deployment**  
 - Docker  
 - Kubernetes 
-
-## Architecture
-
-![Microservices Architecture](architecture.png)
-
-The above diagram illustrates the architecture of the microservices in this project.
 
 ## Getting Started
 
