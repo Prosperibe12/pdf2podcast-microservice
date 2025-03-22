@@ -1,0 +1,86 @@
+version: '3.1'
+services:
+  auth:
+    image: prosperibe12/auth-service 
+    ports:
+      - 8001:800
+    depends_on:
+      - postgresdb
+      - rabbitmq
+    env_file:
+      - .env
+    develop:
+      watch:
+        - path: .
+          action: sync
+          target: /app
+
+  gateway:
+    image: prosperibe12/gateway-service 
+    ports:
+      - 5001:5000
+    depends_on:
+      - rabbitmq
+      - mongodb
+    env_file:
+      - .env 
+
+  converter:
+    image: prosperibe12/converter-service
+    depends_on:
+      - rabbitmq
+    env_file:
+      - .env
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 15671:15672
+    networks:
+      - backend
+    volumes:
+      - rabbit_data:/var/lib/rabbitmq/mnesia/
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+
+  postgresdb:
+    image: postgres
+    ports:
+      - 5431:5432
+    env_file:
+      - .env
+    networks:
+      - backend
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+
+  mongodb:
+    image: mongo
+    ports:
+      - 27016:27017
+    env_file:
+      - .env
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - backend
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+
+volumes:
+  db_data:
+  rabbit_data:
+  mongo_data:
+
+networks:
+  frontend:
+  backend:
+
