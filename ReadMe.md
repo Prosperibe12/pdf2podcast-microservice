@@ -7,7 +7,7 @@ This project demonstrates a microservices architecture. It includes multiple ser
 - **[RabbitMQ Service](https://github.com/Prosperibe12/rabbitmq-service)**: Handles messaging between services.
 - **[MongoDB Service](https://github.com/Prosperibe12/mongodb-service)**: Manages MongoDB database operations.
 - **[DB Service](https://github.com/Prosperibe12/postgres-service)**: Manages the database operations.
-- **[Notification Service](./notification_service/README.md)**: Sends notifications to users.
+- **[Notification Service](https://github.com/Prosperibe12/notification-service)**: Sends notifications to users.
 - **[Video to MP3 Service](https://github.com/Prosperibe12/converter-service)**: Converts video files to MP3 format.
 - **[PDF to Podcast Service](./pdf_to_podcast_service/README.md)**: Converts PDF documents to intuitive podcast style audio.
 
